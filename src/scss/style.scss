@@ -1,0 +1,12 @@
+@import "~normalize.css";
+@import "common/vars";
+@import "common/mixins";
+@import "common/adjustment";
+
+h1 {
+  display: block;
+  padding: 30px;
+  background-color: $color;
+  color: white;
+  text-align: center;
+}

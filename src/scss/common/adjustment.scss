@@ -1,0 +1,89 @@
+$footer-height: 80px;
+$container-width: 1200px;
+
+html {
+  font-size: 16px;
+
+  @include desktop {
+    font-size: 16px;
+  }
+  @include laptop {
+    font-size: 15px;
+  }
+  @include tablets {
+    font-size: 14px;
+  }
+  @include phones {
+    font-size: 13px;  }
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+
+}
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  background-color: #f6f6f6;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+  flex-direction: column;
+}
+
+.wrapper:after {
+  content: "";
+  display: flex;
+  height: $footer-height;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  width: 1200px;
+
+
+
+  @include desktop {
+    width: 970px;
+  }
+  @include laptop {
+    width: 750px;
+  }
+  @include tablets {
+    width: 480px;
+  }
+  @include phones {
+    width: auto;
+  }
+
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
